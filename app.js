@@ -164,4 +164,3 @@ app.listen(port, () => {
     console.log(`Serving on port ${port}`)
 })
 
-module.exports = dbUrl
