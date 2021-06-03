@@ -1,6 +1,5 @@
-if (process.env.NODE_ENV !== "production") {
-    require('dotenv').config();
-}
+require('dotenv').config();
+
 
 const express = require('express');
 const path = require('path');
@@ -164,3 +163,5 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`Serving on port ${port}`)
 })
+
+module.exports = dbUrl
