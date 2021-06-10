@@ -8,10 +8,10 @@
     <div class="card mb-3">
         <div class="row">
             <div class="col-md-4">
-                <% if (campground.images.length)  {%> 
+                <% if (campground.images.length) {%> 
                     <img class="img-fluid" alt="" src="<%=campground.images[0].url%>">
                 <% } else { %>
-                        <img class="img-fluid" alt="" src="https://res.cloudinary.com/daifm4b7p/image/upload/v1622390944/YelpCamp/nyiexve9lknnbtatnugk.jpg">
+                        <img class="img-fluid" alt="" src="https://res.cloudinary.com/daifm4b7p/image/upload/v1622924954/YelpCamp/w8l9tuovzf4nssjif594.jpg">
                 <% } %>  
             </div>
             <div class="col-md-8">
@@ -21,7 +21,7 @@
                     <p class="card-text">
                         <small class="text-muted"><%= campground.location %></small>
                     </p>
-                    <a class="btn btn-primary" href="/campgrounds/<%= campground._id %>">View <%= campground.title %></a>
+                    <a class="btn btn-primary" href="/campgrounds/<%= campground._id %>">View <%=campground.title%></a>
                 </div>
             </div>
         </div>

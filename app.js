@@ -16,7 +16,7 @@ const User = require('./models/users');
 const helmet = require('helmet');
 const mongoSanitize = require('express-mongo-sanitize');
 const userRoutes = require('./routes/users');
-const campgroundRoutes = require('./routes/campgrpounds')
+const campgroundRoutes = require('./routes/campgrounds')
 const reviewRoutes = require('./routes/reviews');
 
 const MongoStore = require("connect-mongo");
@@ -124,6 +124,7 @@ app.use(
     })
 );
 
+app.locals.moment = require("moment")
 
 app.use(passport.initialize());
 app.use(passport.session());

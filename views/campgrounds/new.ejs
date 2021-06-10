@@ -29,16 +29,17 @@
                 <textarea class="form-control" type="text" id="description" name="campground[description]" required></textarea>
             </div>
             <div class="mb-3">
-                <div class="custom-file">
-                    <label for="image" class="form-label custom-file-label">Choose Image(s)</label>
+                <label for="image" class="form-label custom-file-label">Choose Image(s)</label>
+                <div class="custom-file" id="customFile">
                     <input class="form-control" type="file" id="image" name="image" multiple>
                 </div>
             </div>
             <div class="mb-3">
                 <button class="btn btn-success">Add Campground</button>
+                <a class="card-link btn btn-secondary" href="/campgrounds">All Campgrounds</a>
             </div>
+            
         </form>
-        <a href="/campgrounds">All Campgrounds</a>
     </div>
 </div>
 
